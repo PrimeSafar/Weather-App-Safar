@@ -1,42 +1,28 @@
 import "./style.css";
+import "../asset/cloudnight.png";
+import "../asset/cloudsun.png";
+import "../asset/fag.png";
+import "../asset/lighting.png";
+import "../asset/moon.png";
+import "../asset/rainy.png";
+import "../asset/snow.png";
+import "../asset/sunnny.png";
+import "../asset/sunrain.png";
+import "../asset/wind.png";
 
-// Function to get icon path based on weather condition
-function getWeatherIcon(condition) {
-  condition = condition.toLowerCase();
-
-  if (condition.includes("clear-day")) {
-    return "../asset/sunnny.png";
-  } 
-  else if (condition.includes("clear-night")) {
-    return "../asset/moon.png";
-  }
-  else if (condition.includes("partly-cloudy-day")) {
-    return "../asset/cloudsun.png";
-  }
-  else if (condition.includes("partly-cloudy-night")) {
-    return "../asset/cloudnight.png";
-  }
-  else if (condition.includes("rain") || condition.includes("drizzle")) {
-    return "../asset/rainy.png";
-  }
-  else if (condition.includes("snow") || condition.includes("sleet")) {
-    return "../asset/snow.png";
-  }
-  else if (condition.includes("wind") || condition.includes("breezy")) {
-    return "../asset/wind.png";
-  }
-  else if (condition.includes("cloudy") || condition.includes("overcast")) {
-    return "../asset/cloudnight.png";
-  }
-  else if (condition.includes("fog") || condition.includes("haze")) {
-    return "assets/fog.png";
-  }
-  else if (condition.includes("thunder") || condition.includes("lightning")) {
-    return "../asset/lighting.png";
-  }
-  else if (condition.includes("sun") && condition.includes("rain")) {
-    return "../asset/sunrain.png";
-  }
+function getWeatherIcon(iconName) {
+  const iconMap = {
+    "clear-day": "../asset/sunnny.png",
+    "clear-night": "../asset/moon.png",
+    "partly-cloudy-day": "../asset/cloudsun.png",
+    "partly-cloudy-night": "../asset/cloudnight.png",
+    "rain": "../asset/rainy.png",
+    "snow": "../asset/snow.png",
+    "wind": "../asset/wind.png",
+    "cloudy": "../asset/cloudnight.png",
+    "fog": "../asset/fag.png",
+  };
+  return iconMap[iconName] || "../asset/default.png";
 }
 
 document.getElementById("InputHeader").addEventListener("keydown", function (event) {
@@ -60,7 +46,6 @@ async function fetchAndDisplayWeather() {
     );
     const weatherData = await response.json();
     displayWeatherData(weatherData);
-    getWeatherIcon(weatherData)
   } catch (error) {
     document.getElementById("MainShow").innerHTML = `
       <div class="error">Error fetching weather data: ${error.message}</div>
@@ -71,32 +56,62 @@ async function fetchAndDisplayWeather() {
 function displayWeatherData(data) {
   const current = data.currentConditions;
   const today = data.days[0];
-  
-  // Set main weather icon
-  const weatherIcon = document.getElementById('weather-icon');
-  weatherIcon.src = getWeatherIcon(current.conditions);
-  weatherIcon.onerror = () => { weatherIcon.src = "assets/default.png"; };
+  const sunrise = today.sunrise;
+  const sunset = today.sunset;
+  const maxTemp = ((today.tempmax - 32) * 5/9).toFixed(2);
+  const minTemp = ((today.tempmin - 32) * 5/9).toFixed(2);
+  const feelsLike = ((today.feelslike - 32) * 5/9).toFixed(2);
+  const humidity = today.humidity;
+  const windSpeed = today.windspeed;
+  const windGust = today.windgust;
+  const pressure = today.pressure;
+  const uvIndex = today.uvindex;
+  const rainChance = today.precipprob;
 
-  // Set weather data
-  document.getElementById('temperature').textContent = `${((current.temp - 32) * 5/9).toFixed(2)}°C`;
-  document.getElementById('description').textContent = current.conditions;
-
-  // Set additional weather info
-  document.getElementById('MaxTemp').textContent = `${((today.tempmax - 32) * 5/9).toFixed(2)}°C`;
-  document.getElementById('MinTemp').textContent = `${((today.tempmin - 32) * 5/9).toFixed(2)}°C`;
-  document.getElementById('FeelLike').textContent = `Feels Like ${((today.feelslike - 32) * 5/9).toFixed(2)}°`;
-  document.getElementById('description-Chance-of-Rain').textContent = `${today.precipprob}%`;
-  document.getElementById('description-Chance-of-Wind').textContent = `${today.windspeed} km/h`;
-  document.getElementById('description-Chance-of-Sunrise').textContent = `${today.sunrise} AM`;
-  document.getElementById('description-Chance-of-Sunset').textContent = `${today.sunset} PM`;
-  document.getElementById('description-Chance-of-Pressure').textContent = `${today.pressure} mb`;
-  document.getElementById('description-Chance-of-UvIndex').textContent = today.uvindex;
-  document.getElementById('description-Chance-of-Humidity').textContent = `${today.humidity}%`;
-  document.getElementById('description-Chance-of-Gusts').textContent = `${today.windgust} km/h`;
-
-  // Display forecasts
   displayHourlyForecast(data.days[0].hours);
   displayWeeklyForecast(data.days);
+
+  // Weather Container
+  document.getElementById('weather-icon').src = getWeatherIcon(current.icon);
+  document.getElementById('temperature').textContent = `${((current.temp - 32) * 5/9).toFixed(2)}°C`;
+  document.getElementById('description').textContent = `${current.conditions}`;
+
+  // Weather-Container-Side
+  document.getElementById('MaxTemp').textContent = `${maxTemp}°C`;
+  document.getElementById('MinTemp').textContent = `${minTemp}°C`;
+  document.getElementById('FeelLike').textContent = `Feels Like ${feelsLike}°`;
+
+  // Chance Rain Container
+  document.getElementById('Chance-of-Rain').textContent = 'Chance of rain';
+  document.getElementById('description-Chance-of-Rain').textContent = `${rainChance}%`;
+  
+  // Wind Container
+  document.getElementById('Chance-of-Wind').textContent = 'Wind';
+  document.getElementById('description-Chance-of-Wind').textContent = `${windSpeed} km/h`;
+
+  // Sunrise Container
+  document.getElementById('Chance-of-Sunrise').textContent = 'Sunrise';
+  document.getElementById('description-Chance-of-Sunrise').textContent = `${sunrise} AM`;
+
+  // SunSet Container
+  document.getElementById('Chance-of-Sunset').textContent = `Sunset`;
+  document.getElementById('description-Chance-of-Sunset').textContent = `${sunset} PM`;
+
+  // Pressure Container
+  document.getElementById('Chance-of-Pressure').textContent = 'Pressure';
+  document.getElementById('description-Chance-of-Pressure').textContent = `${pressure} mb`;
+
+  // UV index Container
+  document.getElementById('Chance-of-UvIndex').textContent = 'UV';
+  document.getElementById('description-Chance-of-UvIndex').textContent = `${uvIndex}`;
+
+  // Humidity Container
+  document.getElementById('Chance-of-Humidity').textContent = 'Humidity';
+  document.getElementById('description-Chance-of-Humidity').textContent = `${humidity}%`;
+
+  // Gusts Container
+  document.getElementById('Chance-of-Gusts').textContent = 'Gusts';
+  document.getElementById('description-Chance-of-Gusts').textContent = `${windGust} km/h`;
 }
 
 function formatTime(timestamp) {
@@ -113,15 +128,15 @@ function displayHourlyForecast(hourlyData) {
   const hourlyContainer = document.getElementById('hourly-forecast');
   hourlyContainer.innerHTML = '';
   
-  hourlyData.slice(0, 12).forEach(hour => {
+  const hoursToShow = 12;
+  
+  hourlyData.slice(0, hoursToShow).forEach(hour => {
     const tempC = ((hour.temp - 32) * 5/9).toFixed(1);
     const hourCard = document.createElement('div');
     hourCard.className = 'hourly-card';
     hourCard.innerHTML = `
       <div class="time">${formatTime(hour.datetimeEpoch)}</div>
-      <img class="forecast-icon" src="${getWeatherIcon(hour.conditions)}" 
-           alt="${hour.conditions}" 
-           onerror="this.src='assets/default.png'">
+      <img class="forecast-icon" src="${getWeatherIcon(hour.icon)}" alt="${hour.conditions}">
       <div class="temp">${tempC}°C</div>
       <div class="precip">${hour.precipprob}%</div>
     `;
@@ -140,9 +155,7 @@ function displayWeeklyForecast(dailyData) {
     dayCard.className = 'daily-card';
     dayCard.innerHTML = `
       <div class="day">${formatDay(day.datetimeEpoch)}</div>
-      <img class="forecast-icon" src="${getWeatherIcon(day.conditions)}" 
-           alt="${day.conditions}" 
-           onerror="this.src='assets/default.png'">
+      <img class="forecast-icon" src="${getWeatherIcon(day.icon)}" alt="${day.conditions}">
       <div class="temp-range">
         <span class="max-temp">${maxTempC}°</span>
         <span class="min-temp">${minTempC}°</span>
