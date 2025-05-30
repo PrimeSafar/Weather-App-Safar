@@ -1,4 +1,14 @@
 import "./style.css";
+import "../asset/cloudnight.png"
+import "../asset/cloudsun.png"
+import "../asset/fag.png"
+import "../asset/lighting.png"
+import "../asset/moon.png"
+import "../asset/rainy.png"
+import "../asset/snow.png"
+import "../asset/sunnny.png"
+import "../asset/sunrain.png"
+import "../asset/wind.png"
 
 document
   .getElementById("InputHeader")

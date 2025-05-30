@@ -15,25 +15,19 @@ module.exports = {
       template: "./src/template.html",
     }),
   ],
-   module: {
+  module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'fonts/[name][ext]',
-        },
+        test: /\.html$/i,
+        loader: "html-loader",
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg)$/i,
-        type: 'asset/',
-        generator: {
-          filename: 'images/[name][ext]',
-        },
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
       },
     ],
   },
