@@ -42,6 +42,9 @@ async function fetchAndDisplayWeather() {
   }
 }
 
+
+function displayWeatherData(data) {
+
 const iconMap = {
   "clear-day": "../asset/sunnny.png",
   "clear-night": "../asset/moon.png",
@@ -53,8 +56,6 @@ const iconMap = {
   "cloudy": "../asset/cloudnight.png",
   "fog": "../asset/fag.png",
 };
-
-function displayWeatherData(data) {
  const current = data.currentConditions;
 const today = data.days[0];
 const sunrise = today.sunrise;
@@ -75,7 +76,7 @@ displayHourlyForecast(data.days[0].hours);
    ! For Weather Container !
   */
 
-  document.getElementById('weather-icon').src = `${iconMap[current.icon] || ""}`
+  document.getElementById('weather-icon').src = iconMap[current.icon] || "../asset/default.png";
 document.getElementById('temperature').textContent = `${((current.temp - 32) * 5/9).toFixed(2)}°C`; 
  document.getElementById('description').textContent = `${current.conditions}`
 
@@ -200,5 +201,7 @@ function displayWeeklyForecast(dailyData) {
 
 // Fetch weather for default location (iraq) when page loads
 window.addEventListener('load', fetchAndDisplayWeather);
+
+console.log("Current icon:", current.icon, "Resolved path:", iconMap[current.icon]);
 
 
