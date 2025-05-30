@@ -1,28 +1,50 @@
 import "./style.css";
-import cloudnight from "../asset/cloudnight.png";
-import cloudsun from "../asset/cloudsun.png";
-import fog from "../asset/fag.png"; // Changed from fag.png
-import lighting from "../asset/lighting.png";
-import moon from "../asset/moon.png";
-import rainy from "../asset/rainy.png";
-import snow from "../asset/snow.png";
-import sunny from "../asset/sunnny.png"; // Changed from sunnny.png
-import sunrain from "../asset/sunrain.png";
-import wind from "../asset/wind.png";
+import cloudnight from "../asset/icon/moonCloud.svg";
+import cloudsun from "../asset/icon/suncloud.svg";
+import fog from "../asset/icon/fag.svg";
+import lighting from "../asset/icon/moonLight.svg";
+import moon from "../asset/icon/moon.svg";
+import rainy from "../asset/icon/rain.svg";
+import snow from "../asset/icon/snow.svg";
+import sunny from "../asset/icon/sunny.svg"; // Changed from sunnny.png
+import sunrain from "../asset/icon/sunrain.svg";
+import wind from "../asset/icon/wind.svg";
 
 function getWeatherIcon(iconName) {
   const iconMap = {
+    // Clear
     "clear-day": sunny,
     "clear-night": moon,
+    
+    // Partly Cloudy
     "partly-cloudy-day": cloudsun,
     "partly-cloudy-night": cloudnight,
+    "cloudy": fog,
+    
+    // Rain
     "rain": rainy,
+    "freezing-rain": lighting,
+    "drizzle": rainy,
+    "thunderstorm": lighting,
+    "thunder-rain": lighting,
+    
+    // Snow
     "snow": snow,
-    "wind":wind,
-    "cloudy": cloudnight,
-    "fog": fog,
+    "sleet": snow,
+    "thunder-snow": snow,
+    "blizzard": snow,
+    
+    // Wind/Fog
+    "windy": wind,
+    "fog": wind,
+    "haze": fog,
+    "dust": fog,
+    
+    // Default
+    "default": sunny
   };
-  return iconMap[iconName] || "../asset/default.png";
+
+  return iconMap[iconName] || iconMap["default"];
 }
 
 document.getElementById("InputHeader").addEventListener("keydown", function (event) {
