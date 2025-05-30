@@ -1,26 +1,26 @@
 import "./style.css";
-import "../asset/cloudnight.png";
-import "../asset/cloudsun.png";
-import "../asset/fag.png";
-import "../asset/lighting.png";
-import "../asset/moon.png";
-import "../asset/rainy.png";
-import "../asset/snow.png";
-import "../asset/sunnny.png";
-import "../asset/sunrain.png";
-import "../asset/wind.png";
+import cloudnight from "../asset/cloudnight.png";
+import cloudsun from "../asset/cloudsun.png";
+import fog from "../asset/fag.png"; // Changed from fag.png
+import lighting from "../asset/lighting.png";
+import moon from "../asset/moon.png";
+import rainy from "../asset/rainy.png";
+import snow from "../asset/snow.png";
+import sunny from "../asset/sunnny.png"; // Changed from sunnny.png
+import sunrain from "../asset/sunrain.png";
+import wind from "../asset/wind.png";
 
 function getWeatherIcon(iconName) {
   const iconMap = {
-    "clear-day": "../asset/sunnny.png",
-    "clear-night": "../asset/moon.png",
-    "partly-cloudy-day": "../asset/cloudsun.png",
-    "partly-cloudy-night": "../asset/cloudnight.png",
-    "rain": "../asset/rainy.png",
-    "snow": "../asset/snow.png",
-    "wind": "../asset/wind.png",
-    "cloudy": "../asset/cloudnight.png",
-    "fog": "../asset/fag.png",
+    "clear-day": sunny,
+    "clear-night": moon,
+    "partly-cloudy-day": cloudsun,
+    "partly-cloudy-night": cloudnight,
+    "rain": rainy,
+    "snow": snow,
+    "wind":wind,
+    "cloudy": cloudnight,
+    "fog": fog,
   };
   return iconMap[iconName] || "../asset/default.png";
 }
