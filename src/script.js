@@ -2,8 +2,6 @@ import "./style.css";
 
 // Function to get icon path based on weather condition
 function getWeatherIcon(condition) {
-  if (!condition) return "assets/default.png";
-  
   condition = condition.toLowerCase();
 
   if (condition.includes("clear-day")) {
@@ -39,9 +37,6 @@ function getWeatherIcon(condition) {
   else if (condition.includes("sun") && condition.includes("rain")) {
     return "../asset/sunrain.png";
   }
-  else {
-    return "../asset/cloudsun.png";
-  }
 }
 
 document.getElementById("InputHeader").addEventListener("keydown", function (event) {
@@ -65,6 +60,7 @@ async function fetchAndDisplayWeather() {
     );
     const weatherData = await response.json();
     displayWeatherData(weatherData);
+    getWeatherIcon(weatherData)
   } catch (error) {
     document.getElementById("MainShow").innerHTML = `
       <div class="error">Error fetching weather data: ${error.message}</div>
