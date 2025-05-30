@@ -10,6 +10,20 @@ import "../asset/sunnny.png"
 import "../asset/sunrain.png"
 import "../asset/wind.png"
 
+
+const iconMap = {
+  "clear-day": "../asset/sunnny.png",
+  "clear-night": "../asset/moon.png",
+  "partly-cloudy-day": "../asset/cloudsun.png",
+  "partly-cloudy-night": "../asset/cloudnight.png",
+  "rain": "../asset/rainy.png",
+  "snow": "../asset/snow.png",
+  "wind": "../asset/wind.png",
+  "cloudy": "../asset/cloudnight.png",
+  "fog": "../asset/fag.png",
+};
+
+
 document
   .getElementById("InputHeader")
   .addEventListener("keydown", function (event) {
@@ -45,17 +59,6 @@ async function fetchAndDisplayWeather() {
 
 function displayWeatherData(data) {
 
-const iconMap = {
-  "clear-day": "../asset/sunnny.png",
-  "clear-night": "../asset/moon.png",
-  "partly-cloudy-day": "../asset/cloudsun.png",
-  "partly-cloudy-night": "../asset/cloudnight.png",
-  "rain": "../asset/rainy.png",
-  "snow": "../asset/snow.png",
-  "wind": "../asset/wind.png",
-  "cloudy": "../asset/cloudnight.png",
-  "fog": "../asset/fag.png",
-};
  const current = data.currentConditions;
 const today = data.days[0];
 const sunrise = today.sunrise;
