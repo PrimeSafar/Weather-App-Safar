@@ -10,103 +10,103 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./asset/cloudnight.png":
+/***/ "./asset/icon/fag.svg":
+/*!****************************!*\
+  !*** ./asset/icon/fag.svg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"1c5e177dffbbd30da893.svg\";\n\n//# sourceURL=webpack:///./asset/icon/fag.svg?");
+
+/***/ }),
+
+/***/ "./asset/icon/moon.svg":
+/*!*****************************!*\
+  !*** ./asset/icon/moon.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"cc5c9e4da17d8f345e59.svg\";\n\n//# sourceURL=webpack:///./asset/icon/moon.svg?");
+
+/***/ }),
+
+/***/ "./asset/icon/moonCloud.svg":
+/*!**********************************!*\
+  !*** ./asset/icon/moonCloud.svg ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"bdfed6dbf1a8fd56c4f7.svg\";\n\n//# sourceURL=webpack:///./asset/icon/moonCloud.svg?");
+
+/***/ }),
+
+/***/ "./asset/icon/moonLight.svg":
+/*!**********************************!*\
+  !*** ./asset/icon/moonLight.svg ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"adc3670939de51a9366d.svg\";\n\n//# sourceURL=webpack:///./asset/icon/moonLight.svg?");
+
+/***/ }),
+
+/***/ "./asset/icon/rain.svg":
+/*!*****************************!*\
+  !*** ./asset/icon/rain.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"949cc6e330d34bf93a4e.svg\";\n\n//# sourceURL=webpack:///./asset/icon/rain.svg?");
+
+/***/ }),
+
+/***/ "./asset/icon/snow.svg":
+/*!*****************************!*\
+  !*** ./asset/icon/snow.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"c90fde9c9a1c5b9093d7.svg\";\n\n//# sourceURL=webpack:///./asset/icon/snow.svg?");
+
+/***/ }),
+
+/***/ "./asset/icon/suncloud.svg":
+/*!*********************************!*\
+  !*** ./asset/icon/suncloud.svg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"acacccf2475f1ff290be.svg\";\n\n//# sourceURL=webpack:///./asset/icon/suncloud.svg?");
+
+/***/ }),
+
+/***/ "./asset/icon/sunny.svg":
 /*!******************************!*\
-  !*** ./asset/cloudnight.png ***!
+  !*** ./asset/icon/sunny.svg ***!
   \******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"98715e5713e0491d569a.png\";\n\n//# sourceURL=webpack:///./asset/cloudnight.png?");
+eval("module.exports = __webpack_require__.p + \"2909a175d21b0bc0a0c5.svg\";\n\n//# sourceURL=webpack:///./asset/icon/sunny.svg?");
 
 /***/ }),
 
-/***/ "./asset/cloudsun.png":
-/*!****************************!*\
-  !*** ./asset/cloudsun.png ***!
-  \****************************/
+/***/ "./asset/icon/sunrain.svg":
+/*!********************************!*\
+  !*** ./asset/icon/sunrain.svg ***!
+  \********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"293b4528b44c18940319.png\";\n\n//# sourceURL=webpack:///./asset/cloudsun.png?");
+eval("module.exports = __webpack_require__.p + \"23d2f576d2c197a1c00d.svg\";\n\n//# sourceURL=webpack:///./asset/icon/sunrain.svg?");
 
 /***/ }),
 
-/***/ "./asset/fag.png":
-/*!***********************!*\
-  !*** ./asset/fag.png ***!
-  \***********************/
+/***/ "./asset/icon/wind.svg":
+/*!*****************************!*\
+  !*** ./asset/icon/wind.svg ***!
+  \*****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"96b92030797b9e65eea1.png\";\n\n//# sourceURL=webpack:///./asset/fag.png?");
-
-/***/ }),
-
-/***/ "./asset/lighting.png":
-/*!****************************!*\
-  !*** ./asset/lighting.png ***!
-  \****************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"afe8ab19a917c0ffa45f.png\";\n\n//# sourceURL=webpack:///./asset/lighting.png?");
-
-/***/ }),
-
-/***/ "./asset/moon.png":
-/*!************************!*\
-  !*** ./asset/moon.png ***!
-  \************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"fe68de672d54edf08073.png\";\n\n//# sourceURL=webpack:///./asset/moon.png?");
-
-/***/ }),
-
-/***/ "./asset/rainy.png":
-/*!*************************!*\
-  !*** ./asset/rainy.png ***!
-  \*************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"c15f97ba6d07edaafa26.png\";\n\n//# sourceURL=webpack:///./asset/rainy.png?");
-
-/***/ }),
-
-/***/ "./asset/snow.png":
-/*!************************!*\
-  !*** ./asset/snow.png ***!
-  \************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"4a749707a1a0e7aa8f93.png\";\n\n//# sourceURL=webpack:///./asset/snow.png?");
-
-/***/ }),
-
-/***/ "./asset/sunnny.png":
-/*!**************************!*\
-  !*** ./asset/sunnny.png ***!
-  \**************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"eb00a78580c7ece21dcb.png\";\n\n//# sourceURL=webpack:///./asset/sunnny.png?");
-
-/***/ }),
-
-/***/ "./asset/sunrain.png":
-/*!***************************!*\
-  !*** ./asset/sunrain.png ***!
-  \***************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"bd10d37d80b895b48a67.png\";\n\n//# sourceURL=webpack:///./asset/sunrain.png?");
-
-/***/ }),
-
-/***/ "./asset/wind.png":
-/*!************************!*\
-  !*** ./asset/wind.png ***!
-  \************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"cb556b6d8ac402d5dcee.png\";\n\n//# sourceURL=webpack:///./asset/wind.png?");
+eval("module.exports = __webpack_require__.p + \"fe58b3378a5b75dd0271.svg\";\n\n//# sourceURL=webpack:///./asset/icon/wind.svg?");
 
 /***/ }),
 
@@ -206,7 +206,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _asset_cloudnight_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../asset/cloudnight.png */ \"./asset/cloudnight.png\");\n/* harmony import */ var _asset_cloudsun_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../asset/cloudsun.png */ \"./asset/cloudsun.png\");\n/* harmony import */ var _asset_fag_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../asset/fag.png */ \"./asset/fag.png\");\n/* harmony import */ var _asset_lighting_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../asset/lighting.png */ \"./asset/lighting.png\");\n/* harmony import */ var _asset_moon_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../asset/moon.png */ \"./asset/moon.png\");\n/* harmony import */ var _asset_rainy_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../asset/rainy.png */ \"./asset/rainy.png\");\n/* harmony import */ var _asset_snow_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../asset/snow.png */ \"./asset/snow.png\");\n/* harmony import */ var _asset_sunnny_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../asset/sunnny.png */ \"./asset/sunnny.png\");\n/* harmony import */ var _asset_sunrain_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../asset/sunrain.png */ \"./asset/sunrain.png\");\n/* harmony import */ var _asset_wind_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../asset/wind.png */ \"./asset/wind.png\");\n\n\n\n // Changed from fag.png\n\n\n\n\n // Changed from sunnny.png\n\n\n\nfunction getWeatherIcon(iconName) {\n  const iconMap = {\n    \"clear-day\": _asset_sunnny_png__WEBPACK_IMPORTED_MODULE_8__,\n    \"clear-night\": _asset_moon_png__WEBPACK_IMPORTED_MODULE_5__,\n    \"partly-cloudy-day\": _asset_cloudsun_png__WEBPACK_IMPORTED_MODULE_2__,\n    \"partly-cloudy-night\": _asset_cloudnight_png__WEBPACK_IMPORTED_MODULE_1__,\n    \"rain\": _asset_rainy_png__WEBPACK_IMPORTED_MODULE_6__,\n    \"snow\": _asset_snow_png__WEBPACK_IMPORTED_MODULE_7__,\n    \"wind\":_asset_wind_png__WEBPACK_IMPORTED_MODULE_10__,\n    \"cloudy\": _asset_cloudnight_png__WEBPACK_IMPORTED_MODULE_1__,\n    \"fog\": _asset_fag_png__WEBPACK_IMPORTED_MODULE_3__,\n  };\n  return iconMap[iconName] || \"../asset/default.png\";\n}\n\ndocument.getElementById(\"InputHeader\").addEventListener(\"keydown\", function (event) {\n  if (event.key === \"Enter\") {\n    fetchAndDisplayWeather();\n  }\n});\n\nasync function fetchAndDisplayWeather() {\n  try {\n    let inputValue = document.getElementById(\"input\").value;\n    \n    if (inputValue.trim() === '') {\n      inputValue = 'iraq';\n      document.getElementById(\"input\").value = 'iraq';\n    }\n    \n    const API_KEY = \"HJBWZXX9E58Q64DFWM8XDAYUH\";\n    const response = await fetch(\n      `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${inputValue}?unitGroup=us&key=${API_KEY}&contentType=json`\n    );\n    const weatherData = await response.json();\n    displayWeatherData(weatherData);\n  } catch (error) {\n    document.getElementById(\"MainShow\").innerHTML = `\n      <div class=\"error\">Error fetching weather data: ${error.message}</div>\n    `;\n  }\n}\n\nfunction displayWeatherData(data) {\n  const current = data.currentConditions;\n  const today = data.days[0];\n  const sunrise = today.sunrise;\n  const sunset = today.sunset;\n  const maxTemp = ((today.tempmax - 32) * 5/9).toFixed(2);\n  const minTemp = ((today.tempmin - 32) * 5/9).toFixed(2);\n  const feelsLike = ((today.feelslike - 32) * 5/9).toFixed(2);\n  const humidity = today.humidity;\n  const windSpeed = today.windspeed;\n  const windGust = today.windgust;\n  const pressure = today.pressure;\n  const uvIndex = today.uvindex;\n  const rainChance = today.precipprob;\n\n  displayHourlyForecast(data.days[0].hours);\n  displayWeeklyForecast(data.days);\n\n  // Weather Container\n  document.getElementById('weather-icon').src = getWeatherIcon(current.icon);\n  document.getElementById('temperature').textContent = `${((current.temp - 32) * 5/9).toFixed(2)}°C`;\n  document.getElementById('description').textContent = `${current.conditions}`;\n\n  // Weather-Container-Side\n  document.getElementById('MaxTemp').textContent = `${maxTemp}°C`;\n  document.getElementById('MinTemp').textContent = `${minTemp}°C`;\n  document.getElementById('FeelLike').textContent = `Feels Like ${feelsLike}°`;\n\n  // Chance Rain Container\n  document.getElementById('Chance-of-Rain').textContent = 'Chance of rain';\n  document.getElementById('description-Chance-of-Rain').textContent = `${rainChance}%`;\n  \n  // Wind Container\n  document.getElementById('Chance-of-Wind').textContent = 'Wind';\n  document.getElementById('description-Chance-of-Wind').textContent = `${windSpeed} km/h`;\n\n  // Sunrise Container\n  document.getElementById('Chance-of-Sunrise').textContent = 'Sunrise';\n  document.getElementById('description-Chance-of-Sunrise').textContent = `${sunrise} AM`;\n\n  // SunSet Container\n  document.getElementById('Chance-of-Sunset').textContent = `Sunset`;\n  document.getElementById('description-Chance-of-Sunset').textContent = `${sunset} PM`;\n\n  // Pressure Container\n  document.getElementById('Chance-of-Pressure').textContent = 'Pressure';\n  document.getElementById('description-Chance-of-Pressure').textContent = `${pressure} mb`;\n\n  // UV index Container\n  document.getElementById('Chance-of-UvIndex').textContent = 'UV';\n  document.getElementById('description-Chance-of-UvIndex').textContent = `${uvIndex}`;\n\n  // Humidity Container\n  document.getElementById('Chance-of-Humidity').textContent = 'Humidity';\n  document.getElementById('description-Chance-of-Humidity').textContent = `${humidity}%`;\n\n  // Gusts Container\n  document.getElementById('Chance-of-Gusts').textContent = 'Gusts';\n  document.getElementById('description-Chance-of-Gusts').textContent = `${windGust} km/h`;\n}\n\nfunction formatTime(timestamp) {\n  const date = new Date(timestamp * 1000);\n  return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });\n}\n\nfunction formatDay(timestamp) {\n  const date = new Date(timestamp * 1000);\n  return date.toLocaleDateString([], { weekday: 'short' });\n}\n\nfunction displayHourlyForecast(hourlyData) {\n  const hourlyContainer = document.getElementById('hourly-forecast');\n  hourlyContainer.innerHTML = '';\n  \n  const hoursToShow = 12;\n  \n  hourlyData.slice(0, hoursToShow).forEach(hour => {\n    const tempC = ((hour.temp - 32) * 5/9).toFixed(1);\n    const hourCard = document.createElement('div');\n    hourCard.className = 'hourly-card';\n    hourCard.innerHTML = `\n      <div class=\"time\">${formatTime(hour.datetimeEpoch)}</div>\n      <img class=\"forecast-icon\" src=\"${getWeatherIcon(hour.icon)}\" alt=\"${hour.conditions}\">\n      <div class=\"temp\">${tempC}°C</div>\n      <div class=\"precip\">${hour.precipprob}%</div>\n    `;\n    hourlyContainer.appendChild(hourCard);\n  });\n}\n\nfunction displayWeeklyForecast(dailyData) {\n  const weeklyContainer = document.getElementById('weekly-forecast');\n  weeklyContainer.innerHTML = '';\n  \n  dailyData.slice(1, 8).forEach(day => {\n    const maxTempC = ((day.tempmax - 32) * 5/9).toFixed(1);\n    const minTempC = ((day.tempmin - 32) * 5/9).toFixed(1);\n    const dayCard = document.createElement('div');\n    dayCard.className = 'daily-card';\n    dayCard.innerHTML = `\n      <div class=\"day\">${formatDay(day.datetimeEpoch)}</div>\n      <img class=\"forecast-icon\" src=\"${getWeatherIcon(day.icon)}\" alt=\"${day.conditions}\">\n      <div class=\"temp-range\">\n        <span class=\"max-temp\">${maxTempC}°</span>\n        <span class=\"min-temp\">${minTempC}°</span>\n      </div>\n      <div class=\"precip\">${day.precipprob}%</div>\n    `;\n    weeklyContainer.appendChild(dayCard);\n  });\n}\n\nwindow.addEventListener('load', fetchAndDisplayWeather);\n//new \n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _asset_icon_moonCloud_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../asset/icon/moonCloud.svg */ \"./asset/icon/moonCloud.svg\");\n/* harmony import */ var _asset_icon_suncloud_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../asset/icon/suncloud.svg */ \"./asset/icon/suncloud.svg\");\n/* harmony import */ var _asset_icon_fag_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../asset/icon/fag.svg */ \"./asset/icon/fag.svg\");\n/* harmony import */ var _asset_icon_moonLight_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../asset/icon/moonLight.svg */ \"./asset/icon/moonLight.svg\");\n/* harmony import */ var _asset_icon_moon_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../asset/icon/moon.svg */ \"./asset/icon/moon.svg\");\n/* harmony import */ var _asset_icon_rain_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../asset/icon/rain.svg */ \"./asset/icon/rain.svg\");\n/* harmony import */ var _asset_icon_snow_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../asset/icon/snow.svg */ \"./asset/icon/snow.svg\");\n/* harmony import */ var _asset_icon_sunny_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../asset/icon/sunny.svg */ \"./asset/icon/sunny.svg\");\n/* harmony import */ var _asset_icon_sunrain_svg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../asset/icon/sunrain.svg */ \"./asset/icon/sunrain.svg\");\n/* harmony import */ var _asset_icon_wind_svg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../asset/icon/wind.svg */ \"./asset/icon/wind.svg\");\n\n\n\n\n\n\n\n\n // Changed from sunnny.png\n\n\n\nfunction getWeatherIcon(iconName) {\n  const iconMap = {\n    // Clear\n    \"clear-day\": _asset_icon_sunny_svg__WEBPACK_IMPORTED_MODULE_8__,\n    \"clear-night\": _asset_icon_moon_svg__WEBPACK_IMPORTED_MODULE_5__,\n    \n    // Partly Cloudy\n    \"partly-cloudy-day\": _asset_icon_suncloud_svg__WEBPACK_IMPORTED_MODULE_2__,\n    \"partly-cloudy-night\": _asset_icon_moonCloud_svg__WEBPACK_IMPORTED_MODULE_1__,\n    \"cloudy\": _asset_icon_fag_svg__WEBPACK_IMPORTED_MODULE_3__,\n    \n    // Rain\n    \"rain\": _asset_icon_rain_svg__WEBPACK_IMPORTED_MODULE_6__,\n    \"freezing-rain\": _asset_icon_moonLight_svg__WEBPACK_IMPORTED_MODULE_4__,\n    \"drizzle\": _asset_icon_rain_svg__WEBPACK_IMPORTED_MODULE_6__,\n    \"thunderstorm\": _asset_icon_moonLight_svg__WEBPACK_IMPORTED_MODULE_4__,\n    \"thunder-rain\": _asset_icon_moonLight_svg__WEBPACK_IMPORTED_MODULE_4__,\n    \n    // Snow\n    \"snow\": _asset_icon_snow_svg__WEBPACK_IMPORTED_MODULE_7__,\n    \"sleet\": _asset_icon_snow_svg__WEBPACK_IMPORTED_MODULE_7__,\n    \"thunder-snow\": _asset_icon_snow_svg__WEBPACK_IMPORTED_MODULE_7__,\n    \"blizzard\": _asset_icon_snow_svg__WEBPACK_IMPORTED_MODULE_7__,\n    \n    // Wind/Fog\n    \"windy\": _asset_icon_wind_svg__WEBPACK_IMPORTED_MODULE_10__,\n    \"fog\": _asset_icon_wind_svg__WEBPACK_IMPORTED_MODULE_10__,\n    \"haze\": _asset_icon_fag_svg__WEBPACK_IMPORTED_MODULE_3__,\n    \"dust\": _asset_icon_fag_svg__WEBPACK_IMPORTED_MODULE_3__,\n    \n    // Default\n    \"default\": _asset_icon_sunny_svg__WEBPACK_IMPORTED_MODULE_8__\n  };\n\n  return iconMap[iconName] || iconMap[\"default\"];\n}\n\ndocument.getElementById(\"InputHeader\").addEventListener(\"keydown\", function (event) {\n  if (event.key === \"Enter\") {\n    fetchAndDisplayWeather();\n  }\n});\n\nasync function fetchAndDisplayWeather() {\n  try {\n    let inputValue = document.getElementById(\"input\").value;\n    \n    if (inputValue.trim() === '') {\n      inputValue = 'iraq';\n      document.getElementById(\"input\").value = 'iraq';\n    }\n    \n    const API_KEY = \"HJBWZXX9E58Q64DFWM8XDAYUH\";\n    const response = await fetch(\n      `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${inputValue}?unitGroup=us&key=${API_KEY}&contentType=json`\n    );\n    const weatherData = await response.json();\n    displayWeatherData(weatherData);\n  } catch (error) {\n    document.getElementById(\"MainShow\").innerHTML = `\n      <div class=\"error\">Error fetching weather data: ${error.message}</div>\n    `;\n  }\n}\n\nfunction displayWeatherData(data) {\n  const current = data.currentConditions;\n  const today = data.days[0];\n  const sunrise = today.sunrise;\n  const sunset = today.sunset;\n  const maxTemp = ((today.tempmax - 32) * 5/9).toFixed(2);\n  const minTemp = ((today.tempmin - 32) * 5/9).toFixed(2);\n  const feelsLike = ((today.feelslike - 32) * 5/9).toFixed(2);\n  const humidity = today.humidity;\n  const windSpeed = today.windspeed;\n  const windGust = today.windgust;\n  const pressure = today.pressure;\n  const uvIndex = today.uvindex;\n  const rainChance = today.precipprob;\n\n  displayHourlyForecast(data.days[0].hours);\n  displayWeeklyForecast(data.days);\n\n  // Weather Container\n  document.getElementById('weather-icon').src = getWeatherIcon(current.icon);\n  document.getElementById('temperature').textContent = `${((current.temp - 32) * 5/9).toFixed(2)}°C`;\n  document.getElementById('description').textContent = `${current.conditions}`;\n\n  // Weather-Container-Side\n  document.getElementById('MaxTemp').textContent = `${maxTemp}°C`;\n  document.getElementById('MinTemp').textContent = `${minTemp}°C`;\n  document.getElementById('FeelLike').textContent = `Feels Like ${feelsLike}°`;\n\n  // Chance Rain Container\n  document.getElementById('Chance-of-Rain').textContent = 'Chance of rain';\n  document.getElementById('description-Chance-of-Rain').textContent = `${rainChance}%`;\n  \n  // Wind Container\n  document.getElementById('Chance-of-Wind').textContent = 'Wind';\n  document.getElementById('description-Chance-of-Wind').textContent = `${windSpeed} km/h`;\n\n  // Sunrise Container\n  document.getElementById('Chance-of-Sunrise').textContent = 'Sunrise';\n  document.getElementById('description-Chance-of-Sunrise').textContent = `${sunrise} AM`;\n\n  // SunSet Container\n  document.getElementById('Chance-of-Sunset').textContent = `Sunset`;\n  document.getElementById('description-Chance-of-Sunset').textContent = `${sunset} PM`;\n\n  // Pressure Container\n  document.getElementById('Chance-of-Pressure').textContent = 'Pressure';\n  document.getElementById('description-Chance-of-Pressure').textContent = `${pressure} mb`;\n\n  // UV index Container\n  document.getElementById('Chance-of-UvIndex').textContent = 'UV';\n  document.getElementById('description-Chance-of-UvIndex').textContent = `${uvIndex}`;\n\n  // Humidity Container\n  document.getElementById('Chance-of-Humidity').textContent = 'Humidity';\n  document.getElementById('description-Chance-of-Humidity').textContent = `${humidity}%`;\n\n  // Gusts Container\n  document.getElementById('Chance-of-Gusts').textContent = 'Gusts';\n  document.getElementById('description-Chance-of-Gusts').textContent = `${windGust} km/h`;\n}\n\nfunction formatTime(timestamp) {\n  const date = new Date(timestamp * 1000);\n  return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });\n}\n\nfunction formatDay(timestamp) {\n  const date = new Date(timestamp * 1000);\n  return date.toLocaleDateString([], { weekday: 'short' });\n}\n\nfunction displayHourlyForecast(hourlyData) {\n  const hourlyContainer = document.getElementById('hourly-forecast');\n  hourlyContainer.innerHTML = '';\n  \n  const hoursToShow = 12;\n  \n  hourlyData.slice(0, hoursToShow).forEach(hour => {\n    const tempC = ((hour.temp - 32) * 5/9).toFixed(1);\n    const hourCard = document.createElement('div');\n    hourCard.className = 'hourly-card';\n    hourCard.innerHTML = `\n      <div class=\"time\">${formatTime(hour.datetimeEpoch)}</div>\n      <img class=\"forecast-icon\" src=\"${getWeatherIcon(hour.icon)}\" alt=\"${hour.conditions}\">\n      <div class=\"temp\">${tempC}°C</div>\n      <div class=\"precip\">${hour.precipprob}%</div>\n    `;\n    hourlyContainer.appendChild(hourCard);\n  });\n}\n\nfunction displayWeeklyForecast(dailyData) {\n  const weeklyContainer = document.getElementById('weekly-forecast');\n  weeklyContainer.innerHTML = '';\n  \n  dailyData.slice(1, 8).forEach(day => {\n    const maxTempC = ((day.tempmax - 32) * 5/9).toFixed(1);\n    const minTempC = ((day.tempmin - 32) * 5/9).toFixed(1);\n    const dayCard = document.createElement('div');\n    dayCard.className = 'daily-card';\n    dayCard.innerHTML = `\n      <div class=\"day\">${formatDay(day.datetimeEpoch)}</div>\n      <img class=\"forecast-icon\" src=\"${getWeatherIcon(day.icon)}\" alt=\"${day.conditions}\">\n      <div class=\"temp-range\">\n        <span class=\"max-temp\">${maxTempC}°</span>\n        <span class=\"min-temp\">${minTempC}°</span>\n      </div>\n      <div class=\"precip\">${day.precipprob}%</div>\n    `;\n    weeklyContainer.appendChild(dayCard);\n  });\n}\n\nwindow.addEventListener('load', fetchAndDisplayWeather);\n//new \n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
