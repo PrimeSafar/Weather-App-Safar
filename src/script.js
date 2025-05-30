@@ -167,3 +167,4 @@ function displayWeeklyForecast(dailyData) {
 }
 
 window.addEventListener('load', fetchAndDisplayWeather);
+//new 
